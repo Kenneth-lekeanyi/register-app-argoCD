@@ -1,4 +1,4 @@
-**PROCEDURE TO INSTALL GIT BASH ON A WINDOWS OS**
+** **PROCEDURE TO INSTALL GIT BASH ON A WINDOWS OS**
 - Go to a new Browser, then type in Google "git download".
 - Then click on the "Git-Downloads" under "Git SCM"
 - Locate the green box at the right and click on “Download for Windows.”
@@ -9,6 +9,8 @@
 - Now click on “Install.”
 - Select “Google chrome”
 - Then select “Always” to run it.
+
+**(1)** **SETTING UP CLOUDSDK IN YOUR LOCAL**
 
 **[POCEDURE TO SETUP CLOUD SDK FOR A GOUGLE CLOUD ENVIRONMENT]**
 
@@ -153,6 +155,9 @@ If you see this “**command new argument expected**”, know that everything is
  - It should give you an output like this
  - ![Screenshot 2024-11-16 at 9 30 28 AM](https://github.com/user-attachments/assets/e378d37a-18cf-4da8-8c60-00a9896470b4)
  - So your Cloud SDK is all setup
+
+
+**(2)** **LOGGING INTO THE CLUSTER**
 
 
 
