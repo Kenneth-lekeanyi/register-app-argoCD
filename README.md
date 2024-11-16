@@ -54,9 +54,41 @@ Go to Google search bar and type to search for “**download google cloud sdk**�
 - Now, you are good to go. You can now test it.
 - So, In your Terminal, type "**gcloud –version**.
 
-If you see this “command new argument expected”, know that everything is ok
-Whenever you want to take a new setup, maybe for a new project, just do gcloud init enter.
-It will take you through the whole flow again.
+If you see this “**command new argument expected**”, know that everything is ok
+- Whenever you want to take a new setup, maybe for a new project, just do gcloud init enter.
+- It will take you through the whole flow again.
+
+   - **For MacOs**
+- As it defaults you to your OS under macOS, the 1st step wants you to confirm that you have python3 installed in your machine already. So, skip this 1st step and go to the 2nd step. We shall download the python later.
+- Step 2: Here, it gives you three options to download any of them. Click to download the first option of macOS 64-bit (x86_64) if your mac is not Apple M1.
+- So click on "**google-cloud-cli-462.0.1-darwin-x86_64.tar.gz**"
+- Now, go to your Finder and confirm that you have "**google-cloud-sdk**" there.
+- Now, bring up your v.s code.
+- We need to install python at this time. So first bring up your terminal and check if python is currently installed in your OS.
+- So do **python --version**.
+- If it says, “command not found”, know python is not installed. So, it needs to be installed.
+- You can use **brew**. (brew is the install manager for mac).
+- So, do **brew** enter.
+- If brew is installed, then use brew to install python3.
+- So do "**brew install python3**".
+- After the installation is completed, check to confirm it.
+- So do "**python3 --version**"
+  - If the result is not **python 3.11.7**, then know that you have to make python a global service in your OS.
+  - To do this, go to your vs code and type there to check that python is not there in the system already.
+  - Now proceed to make python as a global service in your mac. So vi to this
+  - **vi ~/.bash_profile** enter.
+ 
+ - change to insert mode.
+ - Now paste this command inside this configuration file
+ - **alias python='/usr/local/bin/python3'**
+ - Now, save and quit **esc :wq!**
+
+- Run this command to source or refresh your bash config.
+- **source ~/.bash_profile** enter.
+  - Now, do **python –version**. You will see that it displays "python 3.11.7"
+
+
+
 
 
 
