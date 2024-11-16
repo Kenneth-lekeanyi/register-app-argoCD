@@ -86,6 +86,52 @@ If you see this “**command new argument expected**”, know that everything is
 - Run this command to source or refresh your bash config.
 - **source ~/.bash_profile** enter.
   - Now, do **python –version**. You will see that it displays "python 3.11.7"
+  - Now, in your v.s code Terminal, check your current working directory.
+  - So do **pwd** enter.
+ - Since the google cloud that we downloaded is seated in Downloads, get inside the Download Directory.
+ - So do **cd Downloads** enter. {This is because the gcloud config that we downloaded is currently sitting in Downloads}.
+ - Now, do **ls**.
+ - You will see "google-cloud-sdk" here in your downloads Directory.
+ - So, get into the google cloud sdk.
+ - So do **cd google-cloud-sdk**.
+ - Now do **ls** enter.
+ - You will see that there is a file in here titled as **install.sh.** We need to execute this file. So let's use bash to execute it.    - So do **bash install.sh** enter.
+ - You should see “**Welcome to Google Cloud CLI……**.”
+  - "Gcloud config set disable-usage-reporting false. Do you want to help improve the google cloud CLI (y/N)
+  - Type **"N"** here.
+  - Here, it says “**Modify profile to update your $PATH and enable shell command completion. Do you want to continue?**” (Y/N)
+  - Type **Y** here.
+  - Here it says “**Enter the path to an rc file to update or leave blank to use…**”
+  - Hit "enter" or Hit the return button.
+  - Here it says “**Google cloud CLI works best with python 3.11 and certain modules. Download and run python 3.11 installer**”. (Y/N)
+  - Type **Y** here for yes.
+  - It will prompt you here to enter your computer password.
+  - Now, run this command **source ~/.bash_profile** enter.
+  - It will prompt you to open a new Terminal. So, go to a new terminal and start by checking the version.
+  - So, on a New Terminal, check the version by doing **gcloud –version** enter.
+  - It will show you this.
+   - **lekeanyi@Kenneths-MBP ~ % gcloud --version**
+   - **Google Cloud SDK 462.0.1**
+   - **bq 2.0.101**
+   - **core 2024.01.31**
+   - **gcloud-crc32c 1.0.0**
+   - **gsutil 5.2**
+
+Now do gcloud init enter.  It says.
+          	lekeanyi@Kenneths-MBP ~ % gcloud init
+Welcome! This command will take you through the configuration of gcloud.
+ 
+Your current configuration has been set to: [default]
+ 
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+ 
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...done.                                                                                                                                                            
+Reachability Check passed.
+Network diagnostic passed (1/1 checks passed).
+ 
+
 
 
 
