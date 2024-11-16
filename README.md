@@ -116,21 +116,42 @@ If you see this “**command new argument expected**”, know that everything is
    - **core 2024.01.31**
    - **gcloud-crc32c 1.0.0**
    - **gsutil 5.2**
+- Now do **gcloud init** enter.  It says.
+ - **lekeanyi@Kenneths-MBP ~ % gcloud init**
+ - **Welcome! This command will take you through the configuration of gcloud**.
+ - **Your current configuration has been set to: [default]**
+ - You can skip diagnostics next time by using the following flag:
+ - **gcloud init --skip-diagnostics**
+ 
+ **Network diagnostic detects and fixes local network connection issues**.
+ **Checking network connection...done**.                                                                                                 **Reachability Check passed.**
+ **Network diagnostic passed (1/1 checks passed).**
+ - You must log in to continue. Would you like to log in (Y/n)?  Type **y** enter
+ - It now says: “Your browser has been opened to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=3y51vjaL68A7r6AzUfpDYg6QxW8C8q&access_type=offline&code_challenge=1e7ZFHlpDYWUvYFhxj8hpwz62_Vaj3EnHSGJTeoNOrw&code_challenge_method=S256
 
-Now do gcloud init enter.  It says.
-          	lekeanyi@Kenneths-MBP ~ % gcloud init
-Welcome! This command will take you through the configuration of gcloud.
+- It will populate a Google sign in portal (Choose an Account to continue to Google Cloud SDK) on a new tap, where you will be prompted to type your email address that was used to create you Google Cloud account (for it to authenticate into your Account)
+ - **My own email: klekeanyi84@gmail.com**
+ - **Enter Password:**
+- It will authenticate again on your phone as 2 Factor authentication.
+- Then click on “**Continue**”
+- It says, “**Google Cloud SDK wants to access your Google Account**”.
+- Click on “**Allow**”
  
-Your current configuration has been set to: [default]
+**Success!!**
+- Back in the V.S Code, it says;
+ - **You are logged in as: [klekeanyi84@gmail.com]**.
  
-You can skip diagnostics next time by using the following flag:
-  gcloud init --skip-diagnostics
- 
-Network diagnostic detects and fixes local network connection issues.
-Checking network connection...done.                                                                                                                                                            
-Reachability Check passed.
-Network diagnostic passed (1/1 checks passed).
- 
+- Pick cloud project to use:
+  - [1] hardy-position-404322
+  - [2] Enter a project ID
+  - [3] Create a new project
+- Please enter numeric choice or text value (must exactly match list item): 
+- Enter **1** to log into “your project".
+
+- To test and ensure that everything is working properly, 
+- Type "**gloud –version**" enter
+It should give you an output like this
+
 
 
 
