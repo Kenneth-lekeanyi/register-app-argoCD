@@ -9,6 +9,8 @@
 - Now click on “Install.”
 - Select “Google chrome”
 - Then select “Always” to run it.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 **(1)** **SETTING UP CLOUDSDK IN YOUR LOCAL**
 
@@ -155,12 +157,59 @@ If you see this “**command new argument expected**”, know that everything is
  - It should give you an output like this
  - ![Screenshot 2024-11-16 at 9 30 28 AM](https://github.com/user-attachments/assets/e378d37a-18cf-4da8-8c60-00a9896470b4)
  - So your Cloud SDK is all setup
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 **(2)** **LOGGING INTO THE CLUSTER**
 
+There are 3 ways to log into the Cluster
+- (1) Login through CloudShell directly in the Console
+- (2) Login from your local Machine, using V.S Code
+- (3) Create a VM Instance and log in from that Deployer VM Instance
 
+- How to log into the Cluster from your Local using V.S COde. This will need to setup and install kubectl in your local Laptop
+- 
+  - **(A)** **Installing and Setting up Kubectl for Windows**
+  
+- To install Kubernetes CLI or kubectl on Windows, first of all install "Chocolatey". So
+- Go to the taskbar down the screen and type to search for "Powershell"
+- As it pops up, click on "Powershell" at the top
+- Then rightclick on "Run as Administrator" to populate the (Powershell Command Prompt)
+- In the Powershell Command Prompt that popped up, run this command
+  ***Set-ExecutionPolicy AllSigned***
+  - Then type **y**
+- Now, run this command ***Get-ExecutionPolicy***
+  - It says "AllSigned"
+- Now, run this command
+  - ***Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))***
+- Now, check to confirm that Chocolatey is installed succesfully. Type ***Choco**
+- it says "Cholotatey 10.10.15"
 
+- Now, chocolatey is succefully installed in our Windows Machine.
+- Now, proceed to install Kubernetes CLI or kubectl. So run this command
+  ***choco install kubernetes-cli***
+- It says "Do you want to run this script"?
+  - Type **yes**
+Now, check the version to confirm that kubectl is installed succesfully. So do
+ - ***kubectl version --client***
+Now, open a new PowerShell and run this command.
+- ***kubectl version --client***
+
+- **(B)** **Installing and Setting up Kubectl for MacOs**
+
+- To install kubernetes ctl on mac, First of all install "brew"
+ - ***brew install kubectl***
+- Now, check to confirm that Kubectl is succesfully installed. So do
+- ***kubectl version --client***
+- "It version comes up"
+
+- To investigate and know everything about the pod running, do
+  - ***kubectl get pods POD_NAME -o yaml***
+
+- Now bring up your V.S Code Terminal.
+- ***************** We are going to create a Folder call "**.kube**" in our Home Directory.*****************************
+- So first of all go to your Home Directory. So do **cd** enter
 
 
 
