@@ -150,7 +150,9 @@ If you see this “**command new argument expected**”, know that everything is
 
 - To test and ensure that everything is working properly, 
 - Type "**gloud –version**" enter
-It should give you an output like this
+ - It should give you an output like this
+ - ![Screenshot 2024-11-16 at 9 30 28 AM](https://github.com/user-attachments/assets/e378d37a-18cf-4da8-8c60-00a9896470b4)
+ - So your Cloud SDK is all setup
 
 
 
