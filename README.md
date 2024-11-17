@@ -212,7 +212,39 @@ Now, open a new PowerShell and run this command.
 - So first of all go to your Home Directory. So do **cd** enter
 
 
+At this point, if you try to connect to the Cluster that has just been created from your lOCAL V.S Code terminal by copying the "Connect Command" in the cluster and running it in the V.S Code terminal, **it will error out**
+ - So we have to first install **gke components or gcloud components** in our Local in order to be able to connect to the Cluster from our Local. So, first of all check to ensure that Cloud SDK is installed succesfully in your system. To check that, do
+   - ***gsutile ls***
+   - It says "**Updates are available. To install them, run gcloud components update**"
+   - So, Cloud SDK is installed succesfully.
 
+  - Now, go back to the Cluster in the console, and click on "Connect" and click on "RUN IN CLOUDSHELL"
+  - As the CLOUDSHELL Terminal comes up, hit the "Enter" botton in our Keyboard.
+  - Then click on "Authorize"
+  - As it is connected to the Cluster from the Cloudshell terminal, do ***ls .kube***
+  - It says "Cache config gke_gcloud_auth_plugin_cache"
+    So, in this Cluster, they have a Directory called ".kube"
+    - Now, cat the .kube Directory. so do ***cat .kube/config***
+    - Now, copy the content of this File from **apiVersion: v1...................................:true**
+    - Now, go to your V.S Code terminal and first get into your Home Directory by doing ***cd***
+    - Still in your Home Directory, create a Config file and vi into it. So do
+    - ***vi .kube/config***    { So, we are creating this .kube/config file Locally or in our Local, so as to have that content that you saw in the cluster available in our Local as well for our Local computer to shake hands with the Cluster and get the two of them connected}
+    - Now, change to insert mode ***i***
+    - **Paste that content that you copied from Cloudshell cluster here.**
+    - Now, change back to escape mode ***esc*** then you save and quite ***:wq!***
+    - it reports an **Error**
+    - Paste the Cluster Connection Command here now {***gcloud container cluster get-credentials gke-cluster --zone us-central1-c--project manifest-stream-424502-s1***} and hit "enter"
+    - it reports an "Error" again but says
+    - **Fetching cluster endpoint and auth data!!!**
+    - Now, do this to login to gcloud. So do
+    - ***gcloud auth login***
+    - Proceed to follow the page and login to the Account that is hosting this Cluster there.
+    - Once you are logged in, recall and run the command again (i.e the Cluster connection command which looks like ***gcloud container cluster get-credentials gke-cluster --zone us-central1-c--project manifest-stream-424502-s1***
+    - it says "CRITICAL: Action Required: gke-gcloud-auth-plugin, which ---in-gke--install gke-gcloud-auth-plugin for use with kubectl by following https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke"
+    - Now, we have to install additional plugins for gke. (i.e gcloud Component). So copy this URL above in the CRITICAL Action from **https --- all the way to the end**
+    - Bring up a New Brouwser
+    - Paste that URL in the Search Bar of that New Browser and hit enter.     - {There is a gcloud command that we need from that URL Page}-
+    - i
 
 
 
