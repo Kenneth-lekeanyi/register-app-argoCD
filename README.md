@@ -161,7 +161,7 @@ If you see this “**command new argument expected**”, know that everything is
 
 
 
-**(2)** **LOGGING INTO THE CLUSTER**
+**(2)** **LOGGING INTO THE CLUSTER FOR THE FIRST TIME**
 
 There are 3 ways to log into the Cluster
 - (1) Login through CloudShell directly in the Console
