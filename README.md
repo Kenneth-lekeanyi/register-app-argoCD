@@ -244,7 +244,23 @@ At this point, if you try to connect to the Cluster that has just been created f
     - Now, we have to install additional plugins for gke. (i.e gcloud Component). So copy this URL above in the CRITICAL Action from **https --- all the way to the end**
     - Bring up a New Brouwser
     - Paste that URL in the Search Bar of that New Browser and hit enter.     - {There is a gcloud command that we need from that URL Page}-
-    - i
+    - it says "**Here's what to know about changes to Kubectl authentication coming in GKE V1.26**"
+    - Now, Scroll down and locate "Install using "gcloud Components install" and copy this command there that says
+    - "***gcloud components install gke-cloud-auth-plugin**"
+    - Now open your V.S Code Terminal and run this command there
+    - ******gcloud components install gke-cloud-auth-plugin***
+    - It says "Do you want to continue (N/Y)? type ***Y***
+    - Now, try to login to the Cluster now using the cluster connect command which is { ***gcloud container cluster get-credentials gke-cluster --zone us-central1-c--project manifest-stream-424502-s1*** }. {This command fetches the the cluster credentials and use it to log you into the cluster}
+    - Now, it says
+    - **Fetching Cluster endpoint and auth data**
+    - **Kubeconfig entry generated for gke-cluster**
+    - Now, it has logged you into the Cluster succesfully
+    - --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+So, the "gcloud components install gke-cloud-auth-plugin" is the plugin used to authenticate you to the Cluster. So you need to have that available. Remember that gcloud is just a utility for Cloud SDK. So, this "gke-gcloud-auth-plugin" is a utility for gcloud within Cloud SDK. So you have to install it, then you use it to login to the Cluster, so that is what we have just done to Login to the Cluster from our Local rather than going through to the Browser everytime to Login. *****ITS A ONE TIME SETUP****
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+As we are now inside the cluster, we can start running things, creating and executing our Manifest Files. So test by doing
+- ***kubectl get node***
 
 
 
