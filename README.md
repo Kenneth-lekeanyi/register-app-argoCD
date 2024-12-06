@@ -166,7 +166,11 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
 ***`cd .ssh/`***
 - Inside this Directory, do **`ls`**
 - You will see a File called **authorized_keys**
-- Now, get into this "**authorized_keys**" and paste that public key of the Jenkins-Master server here
+- Now, get into this "**authorized_keys**" and paste that public key of the Jenkins-Master server here. So do **nano authorized_keys**
+- When it opens, use the down arror in your keyboard to come down and change to insert mode.
+- Paste the publick key of the Master and take **control+x**
+- Then take **Y**
+- Then take **Enter**
   "If you cat authorized_key File, you will see both the private and the public key"
 - Now, get inside the Public Key and you go below that public key and paste the public key of the Jenkins-Master server that you copied
 - Then save and quit
