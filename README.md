@@ -214,7 +214,7 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Check the box on "Permanent Agent"
   - Click now on **Create**
   - Number of Executors: 2
-  - Remote root directory: ***/home/ubuntu*** {this is the home Directory of the Agent Server}
+  - Remote root directory: ***/home/ubuntu*** {this is the home Directory of the Agent Server}. "/home/lekeanyi"
   - Labels: ***Jenkins-Agent***
   - Usage: **Use this node as much as possible**
   - Host: Post the private IP of the Jenkins-Agent here {Because both are in thesame VPC. If they were in different VPC, we can use External Ip}
