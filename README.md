@@ -207,6 +207,14 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Then locate on the left and click on "Configure"
   - Number of Executors? **0**
   - Then click on "Save"
+
+ - Click on **Plugins**
+ - Then click on **Available Plugins** at the top left
+ - Then click on **Pipeline: Stage View** or type it out to search for it
+ - Then click on **Install** at the top right.
+ - {This plugin enables you to view every single stage that you have in your Pipeline script with a nice display}
+
+   
 - Now, click on **Dashboard** and click again on "Manage Jenkins"
   - Click again on "Nodes"
   - Now, click on "New Nodes" at the top right
