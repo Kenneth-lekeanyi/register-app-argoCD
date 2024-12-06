@@ -217,6 +217,8 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Remote root directory: ***/home/ubuntu*** {this is the home Directory of the Agent Server}. "/home/lekeanyi"
   - Labels: ***Jenkins-Agent***
   - Usage: **Use this node as much as possible**
+  - Click on the Drop Down beside **Launch agents via SSH** to populate ***Host***
+    
   - Host: Post the private IP of the Jenkins-Agent here {Because both are in thesame VPC. If they were in different VPC, we can use External Ip}
   - Credentials: **None**
   - Click on "+Add"
