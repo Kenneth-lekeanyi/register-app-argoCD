@@ -204,7 +204,9 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Number of Executors? **0**
   - Then click on "Save"
 
- - Click on **Plugins**
+ - Click on "Dashboard"
+ - Click on "Manage Jenkins"
+ - Then you click on **Plugins**
  - Then click on **Available Plugins** at the top left
  - Then click on **Pipeline: Stage View** or type it out to search for it
  - Then click on **Install** at the top right.
@@ -217,8 +219,9 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Node name: Jenkins-Agent
   - Check the box on "Permanent Agent"
   - Click now on **Create**
+  - Description: `This is the Jenkins Agent or Client that is integrated to the Master`
   - Number of Executors: 2
-  - Remote root directory: ***/home/ubuntu*** {this is the home Directory of the Agent Server}. "/home/lekeanyi"
+  - Remote root directory: ***/home/lekeanyi*** {this is the home Directory of the Agent Server}. In AWS, it will be **/home/ubuntu**
   - Labels: ***Jenkins-Agent***
   - Usage: **Use this node as much as possible**
   - Click on the Drop Down beside **Launch agents via SSH** to populate ***Host***
@@ -229,7 +232,7 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Then click on "Jenkins"
   - Kind: **SSH Username with private key**
   - ID: **Jenkins-Agent**
-  - Username: **Ubuntu**
+  - Username: **lekeanyi**. In AWS, it will be **Ubuntu**
   - Private Key
      - check the box on "Enter directly"
   - Click now on "Add"
