@@ -238,7 +238,9 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
   - Click now on "Add"
   - Enter the New Secret Below
   - Key
-    - Now, go to the Jenkins-Master (i.e ubuntu@Jenkins-Master:~) and do ***`/.ssh`*** to populate the Private Key to copy it. Copy the Private Key of this Jenkins-Master from ***---BEGIN OPENSSH PRIVATE KEY*** right up to ***---END OPENSSH PRIVATE KEY---***
+    - Now, go to the Jenkins-Master (i.e ubuntu@Jenkins-Master:~) and do ***`/.ssh`*** to populate those Keys.
+    - Now, cat the private key by doing `cat id_rsa` to populate the private key
+    - Now, Copy the Private Key of this Jenkins-Master from ***---BEGIN OPENSSH PRIVATE KEY*** right up to ***---END OPENSSH PRIVATE KEY---***
     - Paste the Private Key here
   - Credentials: Select ***Ubuntu(Jenkins-Agent)*** {which we have just created}
   - Host Key Verification Strategy: ***Non verifying verification Strategy***
