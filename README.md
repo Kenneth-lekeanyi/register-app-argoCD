@@ -172,13 +172,9 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
 - Paste the publick key of the Master and take **control+x**
 - Then take **Y**
 - Then take **Enter**
-  "If you cat authorized_key File, you will see both the private and the public key"
-- Now, get inside the Public Key and you go below that public key and paste the public key of the Jenkins-Master server that you copied
-- Then save and quit
-***`:wq!`***
-- Now, cat the authorized_key file to see those 2 public keys aligned there. So do
-***`cat authorized_keys`***
-- you will see a "READONLY" public key content of the Agent first above it, then you see the public key content of the Master second directly below it
+- Now, "If you cat authorized_key File, you will see both keys aligned together nicely"
+- So do ***`cat authorized_keys`***
+- you will see a "READONLY" public key content of the Agent first above it, then you see the public key content of the Master directly below it
 
 # (2) Access the Jenkins-Master Server and configure Jenkins to integrate the Agent to the Master Node
 
