@@ -150,7 +150,7 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
 - It also says "Enter same passphrase again"
 ***press ENTER again on your keyboard***
 - The key has been generated
-- Now do ***`pwd`*** to ensure that you are inside /home/ubuntu
+- Now do ***`pwd`*** to ensure that you are inside /home/lekeanyi
 - Now, go into .ssh directory. so do
 ***`cd .ssh/`***
 - Inside this .ssh directory, do **`ls`**
