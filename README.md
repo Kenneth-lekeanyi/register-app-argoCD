@@ -150,7 +150,7 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
 - It also says "Enter same passphrase again"
 ***press ENTER again on your keyboard***
 - The key has been generated
-- Now do ***`pwd`*** to ensure that you are inside /home/lekeanyi
+- Now do ***`pwd`*** to ensure that you are inside **/home/lekeanyi** {This is how it will appear in GCP. In AWS, it will appear as **/home/ubuntu**}
 - Now, go into .ssh directory. so do
 ***`cd .ssh/`***
 - Inside this .ssh directory, do **`ls`**
@@ -161,7 +161,7 @@ Our objective is to use the Jenkins Master-Client Architecture, so that we dont 
 - Now, copy the complete key from "**ssh** all the way to the end **-master**"
 
 - Now, go into the Jenkins-Agent server where you have **ubuntu@Jenkins-Agent:~$**
-- Here, do ***`pwd`*** to see that you are in **/home/ubuntu**
+- Here, do ***`pwd`*** to see that you are in **/home/lekeanyi** {This is how it will appear in GCP. In AWS, it will appear as **/home/ubuntu**}
 - Then, go to the **.ssh** Directory. so do
 ***`cd .ssh/`***
 - Inside this Directory, do **`ls`**
