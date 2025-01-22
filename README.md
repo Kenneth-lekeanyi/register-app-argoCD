@@ -619,7 +619,7 @@ pipeline {
 policy
 
 
-- ***Hidden note Here. Consult the Kenneth to view and proceed to the next step***
+- ***Hidden notes Here. Consult the Kenneth to view and proceed to the next step***
 
 # (10) Add the EKS Cluster to Argo CD.
 
